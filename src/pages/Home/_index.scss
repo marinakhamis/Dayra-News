@@ -1,0 +1,62 @@
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3.2rem;
+
+    // Mini nested grid 
+    &_mini {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, max-content);
+        gap: inherit;
+
+        .recent-news {
+            grid-area: 1/1/2/2;
+        }
+
+        .recent-news-sm {
+            grid-area: 1/2/2/3;
+        }
+
+        .editor-picks {
+            grid-area: 2/1/3/3;
+
+        }
+
+        @include responsive-max(1100) {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+
+    li::marker {
+        color: $color-primary;
+    }
+
+    li {
+        border-bottom: 2px solid $color-pale;
+        padding: 1rem;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+
+    @include responsive-max(1100) {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+.picks {
+    .list-card {
+        border-bottom: 2px solid $color-pale;
+        padding: 1rem;
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+}

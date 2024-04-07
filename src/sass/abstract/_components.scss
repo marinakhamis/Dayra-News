@@ -1,0 +1,73 @@
+.ctr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+//Backgrounds 
+.bg {
+    &__primary {
+        background-color: $color-primary;
+    }
+
+    &__muted {
+        background-color: $color-muted;
+
+    }
+}
+
+//Text 
+.text {
+    &_lg {
+        font-size: 4.5rem;
+        font-weight: 600;
+    }
+
+}
+
+// Buttons 
+.btn {
+    &__primary {
+        background-color: $color-primary;
+        color: $color-white;
+        border: 1px solid $color-primary ;
+        transition: all 0.3s ease-in-out;
+        padding: 1.5rem 4rem;
+        font-size: 1.6rem;
+        border-radius: 1.2rem;
+
+        &:hover {
+            color: $color-primary;
+            background-color: $color-white;
+        }
+    }
+}
+
+.separator {
+    color: $color-gray;
+    height: 1px;
+}
+
+.br__1 {
+    border-radius: 1rem;
+    border: 1px solid $color-muted;
+}
+
+.border__muted {
+    border: 2px solid $color-pale;
+    border-radius: 4px;
+}
+
+.br__bottom {
+    border-bottom: 1px solid $color-pale;
+
+    &:last-of-type {
+        border-bottom: 1px solid transparent;
+
+    }
+}
+
+hr {
+    color: $color-muted;
+    height: 2px;
+    filter: drop-shadow(0 0 0.2rem $color-pale);
+}

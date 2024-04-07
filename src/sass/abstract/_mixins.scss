@@ -1,0 +1,21 @@
+// Responsive media query
+@mixin responsive-max($width-pixels) {
+    $width-em: calc($width-pixels/16);
+
+    @media (max-width:'#{$width-em}em') {
+        @content;
+    }
+}
+
+//Max number of characters and lines 
+@mixin text-ellipses($noOfChars: 20, $clamps: 2) {
+    max-width: #{$noOfChars}ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    -webkit-line-clamp: $clamps;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-word;
+    overflow: hidden;
+}

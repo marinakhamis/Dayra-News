@@ -1,0 +1,62 @@
+.text {
+    &__primary {
+        color: $color-primary;
+    }
+
+    &__secondary {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__gray {
+        color: $color-gray;
+    }
+
+    &__muted {
+        color: $color-muted;
+
+    }
+}
+
+.heading {
+    &__black {
+        font-size: 3.6rem;
+        color: #000;
+        font-weight: 600;
+    }
+
+    &__white {
+        font-size: 3.6rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    &__gray {
+        font-size: 2rem;
+        color: $color-gray;
+        font-weight: 600;
+    }
+}
+
+.fs-12 {
+    font-size: 1.2rem;
+}
+
+.fs-14 {
+    font-size: 1.4rem;
+}
+
+.fs-16 {
+    font-size: 1.6rem;
+}
+
+.fs-18 {
+    font-size: 1.6rem;
+}
+
+.fs-20 {
+    font-size: 2rem;
+}
+
+.fs-32 {
+    font-size: 2.3rem;
+}
