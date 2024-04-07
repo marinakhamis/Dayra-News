@@ -48,7 +48,7 @@ const Home = () => {
 
     }, [isLoading])
     return (
-        isLoading ? <Loader /> :
+        isLoading || newsList?.length < 1 ? <Loader /> :
             <div className="ctr">
                 {/* Start Latest News */}
                 <h1 className="text-center my-5 heading__black "> Latest News </h1>
